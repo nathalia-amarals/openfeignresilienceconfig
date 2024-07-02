@@ -1,2 +1,2 @@
-rootProject.name = "RickAndMortyClient"
+rootProject.name = "MetMuseumClient"
 
