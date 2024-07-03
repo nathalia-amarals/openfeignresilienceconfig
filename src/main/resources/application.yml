@@ -14,8 +14,9 @@ spring:
       client:
         config:
           default:
-            connectTimeout: 100
-            readTimeout: 100
+            loggerlevel: full
+            connectTimeout: 1000
+            readTimeout: 1000
 
 resilience4j:
   circuitbreaker:
@@ -29,3 +30,8 @@ resilience4j:
         waitDurationInOpenState: 500s
         failureRateThreshold: 3
         eventConsumerBufferSize: 10
+
+logging:
+  level:
+    org.example: DEBUG
+    org.springframework.cloud.openfeign: DEBUG
